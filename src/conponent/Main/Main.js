@@ -8,6 +8,9 @@ import Navbar from '../Navbars/Navbars';
 import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
+import PersonalProject from '../PersonalProject/PerosonalProject'
+
+
 
 class Main extends Component {
     test1 =()=>{
@@ -42,7 +45,13 @@ class Main extends Component {
         <Project/>
   </Col>
   </Row>
- 
+  <Row id= "photo" className="mag">
+  <Col>
+        <PersonalProject/>
+  </Col>
+  </Row>
+
+
 <div id="ttt" >tttt</div>
 </Container>
             </div>

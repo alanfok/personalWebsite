@@ -33,7 +33,7 @@ const Navbars = props => {
                 <NavItem id="section-3">Option3/  </NavItem>
                 </Nav>
                 <Nav  className="ml-auto">
-                    <NavItem><Button a href="google" className="LinkenInButton" ><FontAwesomeIcon icon={faLinkedin} size='lg'/></Button></NavItem>
+                    <NavItem><Button a href="https://www.linkedin.com/in/fok-poon-kai-alan-850417151/" className="LinkenInButton" ><FontAwesomeIcon icon={faLinkedin} size='lg'/></Button></NavItem>
                     <NavItem><Button a href="https://github.com/alanfok" className="gitbutton" ><FontAwesomeIcon icon={faGithub} size='lg'/></Button></NavItem>
                 </Nav>
             </Navbar>
