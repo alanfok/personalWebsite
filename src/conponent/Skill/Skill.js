@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./Skill.css"
 import csharp from "../../photo/FyR1o1Wc.png"
 import { faJs, faNodeJs, faJsSquare, faNode, faReact, faNpm } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase} from '@fortawesome/free-solid-svg-icons';
+
+
 
 const skill = props => {
     return (
@@ -35,7 +38,7 @@ const skill = props => {
                     <p><FontAwesomeIcon icon={faNpm} size="4x"/><br/>npm</p>                  
                     </Col>
                     <Col sm="3">
-                    <p><i className="fa fa-database fa-4x"></i><br/>mySQL</p>
+                    <p><FontAwesomeIcon icon={faDatabase} size="4x"/><br/>mySQL</p>
                     </Col>     
                 </Row>
 
