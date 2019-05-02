@@ -11,7 +11,7 @@ import DatabaseProject from "./DatabaseProject/DatabaseProject";
 const Project = props => {
     return (
         <div className="text">
-            <h1 className="headcolor">{"<"}Acadamic{">"}</h1>
+            <h1 className="head">PROJECT</h1>
             <Container>
 
                 <Row >
@@ -33,7 +33,7 @@ const Project = props => {
             </Container>
             <br/>
             <Link to="/moreSchoolProject">more</Link>
-            <h1>{"</"}Acadamic{">"}</h1>
+
         </div>
     );
 };

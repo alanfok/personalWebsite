@@ -11,7 +11,7 @@ import { faDatabase} from '@fortawesome/free-solid-svg-icons';
 const skill = props => {
     return (
         <div className="mar">    
-        <h1>{"<Skill>"}</h1>
+        <h1>Skill</h1>
         <br/>
             <Container>
                 <Row>
@@ -44,7 +44,6 @@ const skill = props => {
 
             </Container>
 
-            <h1>{"</Skill>"}</h1>
              </div>
     );
 };

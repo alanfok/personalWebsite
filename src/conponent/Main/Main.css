@@ -5,3 +5,12 @@
 .center{
     text-align: center
 }
+
+.fullwidth{
+    max-width: 100%;
+}
+
+.skill{
+    width: 100%;
+    background-color:lightgray;
+}
