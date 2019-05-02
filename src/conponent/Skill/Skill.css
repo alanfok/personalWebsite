@@ -1,0 +1,21 @@
+.mar{
+    margin-top: 4%;
+    }
+
+    .dot {
+        height: 70px;
+        width: 70px;
+        position: relative;
+        background-color:black;
+        border-radius: 50%;
+        display: inline-block;
+        color: snow;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px
+        
+      }
+      .pad{
+          padding-top: 17%;
+          padding-left: 09% 
+      }

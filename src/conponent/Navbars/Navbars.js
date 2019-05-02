@@ -1,0 +1,45 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navbars.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+
+
+
+import {Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    Button
+} from 'reactstrap';
+
+
+
+const Navbars = props => {
+    return (
+        <div>
+            <Navbar color="light" light expand="md" className="fixed-top">
+                <NavbarBrand>Alan Website</NavbarBrand>
+                <Nav  navbar>
+                <NavItem onMouseEnter={props.trigger1}>Option1/</NavItem>
+                <NavItem onMouseEnter={props.trigger2}>ttt/ </NavItem>
+                <NavItem id="section-3">Option3/  </NavItem>
+                </Nav>
+                <Nav  className="ml-auto">
+                    <NavItem><Button a href="google" className="LinkenInButton" ><FontAwesomeIcon icon={faLinkedin} size='lg'/></Button></NavItem>
+                    <NavItem><Button a href="https://github.com/alanfok" className="gitbutton" ><FontAwesomeIcon icon={faGithub} size='lg'/></Button></NavItem>
+                </Nav>
+            </Navbar>
+        </div>
+    );
+};
+
+
+export default Navbars;
