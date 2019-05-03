@@ -5,27 +5,27 @@ import { Card, CardImg, CardText, CardBody,
 
 
  import photo from "../../photo/personalSqr.jpg"
-
+import CV from "../../photo/nResume12.pdf"
 
 class Photo extends Component {
+
+    onCVClick(){
+      window.open(CV);
+    }
 
     render() {
 
         return (
             <div>
-              <img className="photo" src={photo} alt="Card image cap"></img>
-            <Card className="mar">
-              <CardImg   />
-              <CardBody>
-                <CardTitle>Alan Fok</CardTitle>
-                
-                <CardText>
-                    <b>Language</b>
- 
-                    </CardText>
-                <Button >CV</Button>
-              </CardBody>
-            </Card>
+              <hr></hr>
+              <h1>About me</h1>
+              <br/>
+              <img className="photo" src={photo} alt="photo1"></img>
+              <br/>
+              <b>Alan Fok</b>
+              <p>Hi.I'm the second year Concordia Computer Science study. And want to be a Fullstack developper.</p>
+              <p>I've always had a passion for technology since I was young, even before becoming a Computer Science student</p>
+              <button onClick={this.onCVClick}>CV</button>
           </div>
         );
     }

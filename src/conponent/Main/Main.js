@@ -28,13 +28,9 @@ class Main extends Component {
       <Navbar trigger1={this.test1} trigger2={this.test2}/>
 
 <Container  className="fullwidth">
-  <Row id= "photo"  className="mag">    
-        <Col sm="3"></Col>
-        <Col sm="6"><Photo/></Col>
-        <Col sm="3"></Col>
-  </Row>
 
-  <Row id= "photo">
+
+  <Row id= "photo" className="mag">
   <Col>
         <Project/>
   </Col>
@@ -44,6 +40,12 @@ class Main extends Component {
       <Col>
       <Col sm="12"><Skill/></Col>
       </Col>
+  </Row>
+
+  <Row id= "photo"  className="mainphoto">    
+        <Col sm="3"></Col>
+        <Col sm="6"><Photo/></Col>
+        <Col sm="3"></Col>
   </Row>
 </Container>
 
