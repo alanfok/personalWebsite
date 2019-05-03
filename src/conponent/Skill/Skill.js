@@ -10,7 +10,9 @@ import { faDatabase} from '@fortawesome/free-solid-svg-icons';
 
 const skill = props => {
     return (
+        
         <div className="mar">    
+        <hr className="hrr"/>
         <h1>Skill</h1>
         <br/>
             <Container>

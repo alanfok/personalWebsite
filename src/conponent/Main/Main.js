@@ -36,6 +36,7 @@ class Main extends Component {
   </Col>
   </Row>
 
+
   <Row id= "photo" >
       <Col>
       <Col sm="12"><Skill/></Col>
