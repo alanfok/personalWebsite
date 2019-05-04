@@ -23,9 +23,9 @@ class Photo extends Component {
               <img className="photo" src={photo} alt="photo1"></img>
               <br/>
               <b>Alan Fok</b>
-              <p>Hi.I'm the second year Concordia Computer Science study. And want to be a Fullstack developper.</p>
+              <p>Hi.I'm the second year Concordia Computer Science student. And want to be a Fullstack developper.</p>
               <p>I've always had a passion for technology since I was young, even before becoming a Computer Science student</p>
-              <button onClick={this.onCVClick}>CV</button>
+              <button onClick={this.onCVClick} className={"photoButton"}>CV</button>
           </div>
         );
     }
