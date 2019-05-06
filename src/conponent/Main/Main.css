@@ -1,0 +1,21 @@
+.mag{
+    margin-top: 5%
+}
+
+.center{
+    text-align: center
+}
+
+.fullwidth{
+    max-width: 100%;
+}
+
+.skill{
+    width: 100%;
+    background-color:lightgray;
+}
+
+.mainphoto{
+   padding: 2%;
+   margin-top: 2%
+}
