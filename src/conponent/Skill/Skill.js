@@ -13,7 +13,7 @@ const skill = props => {
         
         <div className="mar">    
         <hr className="hrr"/>
-        <h1>Skill</h1>
+        <h1>SKILL</h1>
         <br/>
             <Container>
                 <Row>

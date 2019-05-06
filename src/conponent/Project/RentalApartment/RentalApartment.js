@@ -16,7 +16,6 @@ const RentalApartment = props =>{
                                     <li>Similar the rental system</li>
                                     <li>Impliment log-in system by PHP session</li>
                                 </ul>
-                                <Button color="success">sourceCode(Git)</Button>
                             </CardBody>
                         </Card>
     )

@@ -21,7 +21,7 @@ const SmallWorld = props =>{
                                     </ul>
                                     <li className="textleft">Create map by graph matrix</li>
                                 </ul>
-                                <Button color="success">sourceCode(Git)</Button>
+                                <Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>
                             </CardBody>
                         </Card>
     )

@@ -28,9 +28,9 @@ const Navbars = props => {
             <Navbar color="light" light expand="md" className="fixed-top">
                 <NavbarBrand>Alan Website</NavbarBrand>
                 <Nav  navbar>
-                <NavItem onMouseEnter={props.trigger1}>Option1/</NavItem>
-                <NavItem onMouseEnter={props.trigger2}>ttt/ </NavItem>
-                <NavItem id="section-3">Option3/  </NavItem>
+                <NavItem onMouseEnter={props.trigger1} >Project/</NavItem>
+                <NavItem onMouseEnter={props.trigger2} >Skill/ </NavItem>
+                <NavItem onMouseEnter={props.trigger3} >About me/  </NavItem>
                 </Nav>
                 <Nav  className="ml-auto">
                     <NavItem><Button a href="https://www.linkedin.com/in/fok-poon-kai-alan-850417151/" className="LinkenInButton" ><FontAwesomeIcon icon={faLinkedin} size='lg'/></Button></NavItem>

@@ -12,32 +12,37 @@ import Project from '../Project/Project';
 
 class Main extends Component {
     test1 =()=>{
-        var eml= document.getElementById('photo');
+        var eml= document.getElementById('project');
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
 
       test2 =()=>{
-        var eml= document.getElementById('ttt');
+        var eml= document.getElementById('skill');
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
    
-   
+      test3 =()=>{
+        var eml= document.getElementById('photo');
+        eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+      }
+
+
     render() {
         return (
             <div>
-      <Navbar trigger1={this.test1} trigger2={this.test2}/>
+      <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
 
 <Container  className="fullwidth">
 
 
-  <Row id= "photo" className="mag">
+  <Row id= "project" className="mag">
   <Col>
         <Project/>
   </Col>
   </Row>
 
 
-  <Row id= "photo" >
+  <Row id= "skill" >
       <Col>
       <Col sm="12"><Skill/></Col>
       </Col>
@@ -49,8 +54,6 @@ class Main extends Component {
         <Col sm="3"></Col>
   </Row>
 </Container>
-
-<div id="ttt" >tttt</div>
             </div>
         );
     }
