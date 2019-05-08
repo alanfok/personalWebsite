@@ -54,6 +54,7 @@ class Main extends Component {
         <Col sm="3"></Col>
   </Row>
 </Container>
+<br/>
             </div>
         );
     }
