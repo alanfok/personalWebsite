@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Row,Container,Col,Button} from 'reactstrap';
+import aos from 'aos';
+import 'aos/dist/aos.css';
 
 import "./Main.css"
 
@@ -26,6 +28,11 @@ class Main extends Component {
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
 
+      componentDidMount(){
+        aos.init();
+      }
+
+
 
     render() {
         return (
@@ -48,12 +55,14 @@ class Main extends Component {
       </Col>
   </Row>
 
-  <Row id= "photo"  className="mainphoto">    
+  <Row id= "photo"  className="mainphoto" >    
         <Col sm="3"></Col>
         <Col sm="6"><Photo/></Col>
         <Col sm="3"></Col>
   </Row>
+
 </Container>
+
 <br/>
             </div>
         );
