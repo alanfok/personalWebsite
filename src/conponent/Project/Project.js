@@ -30,33 +30,66 @@ class Project extends Component{
     }
     render(){
         console.log(this.state.width);
-    return (
-        <div className="text">
-            <h1 className="head">PROJECT</h1>
-            <Container>
+        const {width} = this.state;
+        const isNeedResize = width<994;
+        //console.log(isNeedResize);
+       
+        if(isNeedResize) //Mobile Mode
+        {
+            return(
+                <div>
+                    <h1 className="head">PROJECT</h1>
+                    <Container>
 
-                <Row >
-                    <Col sm="4" lg="4">
-                        <SmallWorld/>
-                    </Col>
-                    <Col sm="4" lg="4">
-                        <DatabaseProject/>
-                    </Col>
-                    <Col  sm="4" lg="4">
-                        <RentalApartment/>
-                    </Col>
+                        <Row >
+                            <Col sm="12" lg="4">
+                                <SmallWorld/>
+                            </Col>
+                        </Row>
+                        <br/>
+                        <Row>
+                            <Col sm="12" lg="4">
+                                <DatabaseProject/>
+                            </Col>
+                        </Row>
+                        <br/>
+                        <Row>
+                            <Col  sm="12" lg="4">
+                                <RentalApartment/>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <br/>
+                    <Link to="/moreSchoolProject">more</Link>
+                </div>
+            )
+        }
+        else //No Need Resize
+        {
+            return (
+                <div className="text">
+                    <h1 className="head">PROJECT</h1>
+                    <Container>
 
-                </Row>
+                        <Row >
+                            <Col sm="4" lg="4">
+                                <SmallWorld/>
+                            </Col>
+                            <Col sm="4" lg="4">
+                                <DatabaseProject/>
+                            </Col>
+                            <Col  sm="4" lg="4">
+                                <RentalApartment/>
+                            </Col>
 
+                        </Row>
+                    </Container>
+                    <br/>
+                    <Link to="/moreSchoolProject">more</Link>
 
-
-
-            </Container>
-            <br/>
-            <Link to="/moreSchoolProject">more</Link>
-
-        </div>
-    );
+                </div>
+            );
+        }//End of o need resize
     }
 };
 
