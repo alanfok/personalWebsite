@@ -36,13 +36,13 @@ class Project extends Component{
             <Container>
 
                 <Row >
-                    <Col sm="4">
+                    <Col sm="4" lg="4">
                         <SmallWorld/>
                     </Col>
-                    <Col sm="4">
+                    <Col sm="4" lg="4">
                         <DatabaseProject/>
                     </Col>
-                    <Col sm="4">
+                    <Col  sm="4" lg="4">
                         <RentalApartment/>
                     </Col>
 
