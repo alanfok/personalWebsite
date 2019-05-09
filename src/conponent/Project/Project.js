@@ -32,7 +32,6 @@ class Project extends Component{
         console.log(this.state.width);
         const {width} = this.state;
         const isNeedResize = width<994;
-        //console.log(isNeedResize);
        
         if(isNeedResize) //Mobile Mode
         {
