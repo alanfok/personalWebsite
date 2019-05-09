@@ -8,9 +8,9 @@ import "./RentalApartment.css"
 const RentalApartment = props =>{
     return(
 
-            <Card className="shadow aptCard">
+            <Card className="shadow">
                             <CardHeader> <h4>Apartment Rental System <br/> (Web Project)</h4></CardHeader>
-                            <CardBody>
+                            <CardBody className="aptCard">
                                 <ul className= "textleft">
                                     <li>Using html, CSS ,javascript and PHP</li>
                                     <li>Similar the rental system</li>
