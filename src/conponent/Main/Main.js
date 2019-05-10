@@ -10,9 +10,33 @@ import Navbar from '../Navbars/Navbars';
 import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
+import { thisExpression } from '@babel/types';
 
 
 class Main extends Component {
+  
+constructor(props)
+{
+  super(props);
+  this.state ={
+    height : window.innerHeight
+  }
+}
+
+sizeHandler =()=>{
+  this.setState({width: window.innerHeight});
+}
+
+  componentWillMount(){
+    window.addEventListener("resize",this.sizeHandler)
+}
+
+
+componentWillUnmount(){
+    window.removeEventListener("resize",this.sizeHandler)
+}
+
+
     test1 =()=>{
         var eml= document.getElementById('project');
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
@@ -32,12 +56,15 @@ class Main extends Component {
         aos.init();
       }
 
-
-
     render() {
+      const {height}= this.state;
+      const isNeed = height <570;
         return (
+  
+
             <div>
       <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+
 
 <Container  className="fullwidth">
 
@@ -49,7 +76,7 @@ class Main extends Component {
   </Row>
 
 
-  <Row id= "skill" >
+  <Row id= "skill" className="mag">
       <Col>
       <Col sm="12"><Skill/></Col>
       </Col>
@@ -63,11 +90,11 @@ class Main extends Component {
 
 </Container>
 
-<div className="mag">
+<div className="mab">
 
 
 </div>
-<br/>
+
             </div>
         );
     }

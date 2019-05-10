@@ -13,13 +13,15 @@ import 'aos/dist/aos.css';
 
 
 const skill = props => {
-    aos.init();
+    aos.init({once : false});
 
     return (
         
         <div className="mar">    
         <hr className="hrr"/>
+        <br/>
         <h1 data-aos= "fade-up">SKILL</h1>
+        <br/>
         <br/>
             <Container>
                 <Row>
