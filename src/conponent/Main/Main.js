@@ -63,6 +63,10 @@ class Main extends Component {
 
 </Container>
 
+<div className="mag">
+
+
+</div>
 <br/>
             </div>
         );

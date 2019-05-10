@@ -37,8 +37,6 @@ class Photo extends Component {
               <div data-aos="fade-up">
               <button onClick={this.onCVClick} className={"photoButton"}>CV</button>
               </div>
-              <br/>
-              <br/>
           </div>
         );
     }
