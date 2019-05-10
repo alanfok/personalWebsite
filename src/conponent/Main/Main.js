@@ -65,7 +65,7 @@ class Main extends Component {
              </div> */
     render() {
       const {width} = this.state;
-      const isMobile = width <400;
+      const isMobile = width <420;
       
       if(!isMobile)
       {//isLaptop
