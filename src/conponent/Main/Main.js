@@ -56,12 +56,19 @@ class Main extends Component {
 
 
       /**    
-             <div className="bg">
+                     <div className="bg">
                 <span className="firstletter">C</span>
-                <span className="secendletter">O</span>
-                <span className="secendletter">D</span>
-                <span className="secendletter">E</span>
+                <span className="secendletter">o</span>
+                <span className="secendletter">d</span>
+                <span className="secendletter">e</span>
+                <span className="secendletter">i</span>
+                <span className="secendletter">s</span>
+                <span className="secendletter">F</span>
+                <span className="secendletter">U</span>
+                <span className="secendletter">N</span>
+                <span className="secendletter">&#128540;</span>
                 <span className="dash">_</span>
+             </div> 
              </div> */
     render() {
       const {width} = this.state;
@@ -71,13 +78,22 @@ class Main extends Component {
       {//isLaptop
         return (
             <div>
+
       <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+          <div className="bgtest">
+          </div>
+          <p className="footnote">Photo by Clément H</p>
+
+          
           <Container  className="fullwidth">
             <Row id= "project" className="mag">
             <Col>
                   <Project/>
             </Col>
             </Row>
+            </Container>
+  
+             <Container>
             <Row id= "skill" className="mag">
                 <Col>
                 <Col sm="12"><Skill/></Col>
@@ -91,12 +107,14 @@ class Main extends Component {
             </Row>
 
           </Container>
-
+          <hr className="mainHrr"></hr>
           <div className="mab">
 
 
           </div>
                       </div>
+
+
         );
       }//END isLaptop
       else//is Mobile

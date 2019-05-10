@@ -1,3 +1,6 @@
+
+
+
 .mag{
     margin-top: 5%
 }
@@ -39,6 +42,15 @@
     padding: 20%;
 }
 
+.bgtest{
+    background-image: url(../../photo/clement-h-544786-unsplash.jpg);
+    height: 120px;
+    padding: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .firstletter{
     position: relative;
     color: white;
@@ -76,6 +88,18 @@
     animation-duration: 300ms
 }
 
+.mainHrr{
+    margin-left: 28%;
+    margin-right: 28%; 
+}
+
+.footnote{
+    text-align: right;
+    margin-right:5px;
+    color: rgb(235, 154, 154); 
+    font-weight: 700;
+    font-size: 8px
+}
 @keyframes dasha{
     0%{color: black;}
     100%{color: white;}
