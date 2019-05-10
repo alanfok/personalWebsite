@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import {Card,CardHeader,CardBody, Button} from "reactstrap";
 
 import "./DatabaseProject.css" //css style
-
+import aos from "aos";
+import 'aos/dist/aos.css';
 
 const DatabaseProject  = props =>{
+    aos.init();
     return(
-        <Card className="shadow">
+        <Card className="shadow" data-aos="fade-up">
         <CardHeader> <h4>Company internal System (Database)</h4></CardHeader>
         <CardBody>
             <ul className= "textleft">
