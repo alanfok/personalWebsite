@@ -10,32 +10,29 @@ import Navbar from '../Navbars/Navbars';
 import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
-import { thisExpression } from '@babel/types';
 
 
 class Main extends Component {
   
-constructor(props)
-{
-  super(props);
-  this.state ={
-    height : window.innerHeight
-  }
-}
+  constructor(props)
+    {
+        super(props);
+        this.state ={
+            width: window.innerWidth,
+        }
 
-sizeHandler =()=>{
-  this.setState({width: window.innerHeight});
-}
-
-  componentWillMount(){
-    window.addEventListener("resize",this.sizeHandler)
-}
+    }
+    componentWillMount(){
+        window.addEventListener("resize",this.sizeHandler2)
+    }
 
 
-componentWillUnmount(){
-    window.removeEventListener("resize",this.sizeHandler)
-}
-
+    componentWillUnmount(){
+        window.removeEventListener("resize",this.sizeHandler2)
+    }
+    sizeHandler2 =()=>{
+        this.setState({width: window.innerWidth});
+    }
 
     test1 =()=>{
         var eml= document.getElementById('project');
@@ -56,47 +53,85 @@ componentWillUnmount(){
         aos.init();
       }
 
-    render() {
-      const {height}= this.state;
-      const isNeed = height <570;
-        return (
-  
 
+
+      /**    
+             <div className="bg">
+                <span className="firstletter">C</span>
+                <span className="secendletter">O</span>
+                <span className="secendletter">D</span>
+                <span className="secendletter">E</span>
+                <span className="dash">_</span>
+             </div> */
+    render() {
+      const {width} = this.state;
+      const isMobile = width <400;
+      
+      if(!isMobile)
+      {//isLaptop
+        return (
             <div>
       <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+          <Container  className="fullwidth">
+            <Row id= "project" className="mag">
+            <Col>
+                  <Project/>
+            </Col>
+            </Row>
+            <Row id= "skill" className="mag">
+                <Col>
+                <Col sm="12"><Skill/></Col>
+                </Col>
+            </Row>
+
+            <Row id= "photo"  className="mainphoto" >    
+                  <Col sm="3"></Col>
+                  <Col sm="6"><Photo/></Col>
+                  <Col sm="3"></Col>
+            </Row>
+
+          </Container>
+
+          <div className="mab">
 
 
-<Container  className="fullwidth">
-
-
-  <Row id= "project" className="mag">
-  <Col>
-        <Project/>
-  </Col>
-  </Row>
-
-
-  <Row id= "skill" className="mag">
-      <Col>
-      <Col sm="12"><Skill/></Col>
-      </Col>
-  </Row>
-
-  <Row id= "photo"  className="mainphoto" >    
-        <Col sm="3"></Col>
-        <Col sm="6"><Photo/></Col>
-        <Col sm="3"></Col>
-  </Row>
-
-</Container>
-
-<div className="mab">
-
-
-</div>
-
-            </div>
+          </div>
+                      </div>
         );
+      }//END isLaptop
+      else//is Mobile
+      {
+        return (
+          <div>
+    <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+        <Container  className="fullwidth">
+          <Row id= "project" className="magMobile">
+          <Col>
+                <Project/>
+          </Col>
+          </Row>
+          <Row id= "skill" className="mag">
+              <Col>
+              <Col sm="12"><Skill/></Col>
+              </Col>
+          </Row>
+
+          <Row id= "photo"  className="mainphoto" >    
+                <Col sm="3"></Col>
+                <Col sm="6"><Photo/></Col>
+                <Col sm="3"></Col>
+          </Row>
+
+        </Container>
+
+        <div className="mab">
+
+
+        </div>
+                    </div>
+      );//isLaptop
+
+      }
     }
 }
 

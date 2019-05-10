@@ -1,6 +1,10 @@
 .mag{
     margin-top: 5%
 }
+
+.magMobile{
+    margin-top:40%
+}
 .mab{
     margin-top:7%
 }
@@ -38,17 +42,17 @@
     font: 7em sans-serif;
     font-weight: bold;
     animation-name: firstle;
-    animation-duration: 1s;
+    animation-duration: 50 ms;
 }
 
 .secendletter{
     position: relative;
-    color:lightblue;
+    color:rgb(31, 25, 25);
     font: 7em sans-serif;
     font-weight: bold;
     animation-name: firstle;
-    animation-duration: 1s;
-    animation-delay: 3s;
+    animation-duration: 50ms;
+    animation-delay: 200ms;
     animation-fill-mode: forwards;  
 }
 
@@ -57,4 +61,19 @@
     color: white;};
     50% {opacity: 1;color :white;}
     100% {opacity: 1;color :white;}
+}
+
+.dash{
+    position: relative;
+    color: black;
+    font: 7em sans-serif;
+    font-weight: bold;
+    animation-name: dasha;
+    animation-iteration-count: infinite;
+    animation-duration: 300ms
+}
+
+@keyframes dasha{
+    0%{color: black;}
+    100%{color: white;}
 }
