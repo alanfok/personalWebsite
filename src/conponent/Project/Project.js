@@ -29,7 +29,7 @@ class Project extends Component{
         this.setState({width: window.innerWidth});
     }
     render(){
-        console.log(this.state.width);
+        //console.log(this.state.width);
         const {width} = this.state;
         const isNeedResize = width<994;
        
