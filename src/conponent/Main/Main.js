@@ -124,7 +124,7 @@ class Main extends Component {
 
         </Container>
 
-        <div className="mab">
+        <div className="mabMobile">
 
 
         </div>
