@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import "./Project.css";
-import {Card,CardHeader,CardBody, Container, Row,Col, Button} from "reactstrap";
+import {Container, Row,Col} from "reactstrap";
 import {Link} from 'react-router-dom';
 import aos from 'aos';
 import 'aos/dist/aos.css';
@@ -45,10 +45,8 @@ class Project extends Component{
                 <div>
                     <span data-aos="fade-up"><h1 className="head">PROJECT</h1></span>
                     <Container>
-
                         <Row >
-                            <Col sm="12" lg="4">
-                           
+                            <Col sm="12" lg="4">                
                                 <SmallWorld/>
                             </Col>
                         </Row>
@@ -87,7 +85,6 @@ class Project extends Component{
                             <Col  sm="4" lg="4">
                                 <RentalApartment/>
                             </Col>
-
                         </Row>
                     </Container>
                     <br/>
