@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 const SmallWorld = props =>{
     aos.init();
     return(
+        <div>
             <Card className="shadow" data-aos="fade-up">
                             <CardHeader> <h4>game "Small Word" <br/>(C++)</h4></CardHeader>
                             <CardBody>
@@ -25,6 +26,7 @@ const SmallWorld = props =>{
                                 <Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>
                             </CardBody>
                         </Card>
+                        </div>
     )
 }
 

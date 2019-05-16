@@ -25,12 +25,12 @@ import {Collapse,
 const Navbars = props => {
     return (
         <div>
-            <Navbar color="light" light expand="md" className="fixed-top">
-                <NavbarBrand>Alan Website</NavbarBrand>
+            <Navbar color="dark" light expand="md" className="fixed-top">
+                <NavbarBrand><span className="navTitle">Alan Website</span></NavbarBrand>
                 <Nav  navbar>
-                <NavItem onMouseEnter={props.trigger1} >Project/</NavItem>
-                <NavItem onMouseEnter={props.trigger2} >Skill/ </NavItem>
-                <NavItem onMouseEnter={props.trigger3} >About me/  </NavItem>
+                <NavItem onMouseEnter={props.trigger1} ><span className="navSelection" >Project/</span></NavItem>
+                <NavItem onMouseEnter={props.trigger2} > <span className="navSelection" >Skill/ </span></NavItem>
+                <NavItem onMouseEnter={props.trigger3} ><span className="navSelection" >About me/ </span> </NavItem>
                 </Nav>
                 <Nav  className="ml-auto">
                 <NavItem><Button a href="mailto:alan606con@gmail.com" className="LinkenInButton" ><FontAwesomeIcon icon={faEnvelope} size='lg'/></Button></NavItem>

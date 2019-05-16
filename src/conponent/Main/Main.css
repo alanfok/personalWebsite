@@ -48,16 +48,18 @@
     padding: 30%;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
+.bgtext{
+    margin-top: 35%
+}
 
 .firstletter{
     position: relative;
     color: white;
     font: 7em sans-serif;
     font-weight: bold;
-    animation-name: firstle;
-    animation-duration: 50 ms;
 }
 
 .secendletter{

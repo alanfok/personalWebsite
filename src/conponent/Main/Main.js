@@ -10,6 +10,11 @@ import Navbar from '../Navbars/Navbars';
 import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+import { reject } from 'q';
+import { resolveSoa } from 'dns';
+import { templates } from 'handlebars';
+import { resolve } from 'path';
 
 
 class Main extends Component {
@@ -19,6 +24,8 @@ class Main extends Component {
         super(props);
         this.state ={
             width: window.innerWidth,
+            sentense: ["C","O","D","E"],
+            displaySentense: []
         }
 
     }
@@ -30,6 +37,46 @@ class Main extends Component {
     componentWillUnmount(){
         window.removeEventListener("resize",this.sizeHandler2)
     }
+
+  
+/*
+  newSentense = async() =>{
+     for (var i=0; i<4 ; i++){
+       await this.temps(i);
+     }
+   }
+
+   temps = (i) =>{
+    return new Promise((resolve)=>
+    {
+      setTimeout(()=>resolve(this.sentense(i)),1000);
+    });
+}
+*/
+    sentense = (i)=>{
+        var temp = [...this.state.displaySentense];
+        temp.push(this.state.sentense[i])
+        this.setState({displaySentense: temp})
+    }
+
+Sleep = (timeout) =>{
+  return new Promise((resolve) =>{
+    setTimeout(resolve,timeout);
+  })
+}
+
+test= async() => {
+  for(var i = 0; i< 4 ; i++)
+  {
+      this.sentense(i);
+      await this.Sleep(1000)
+  }
+}
+
+
+
+
+
     sizeHandler2 =()=>{
         this.setState({width: window.innerWidth});
     }
@@ -51,6 +98,7 @@ class Main extends Component {
 
       componentDidMount(){
         aos.init();
+        this.test();
       }
 
 
@@ -77,27 +125,24 @@ class Main extends Component {
     render() {
       const {width} = this.state;
       const isMobile = width <420;
-      
+     
       if(!isMobile)
       {//isLaptop
         return (
             <div>
 
       <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
-      <div className="bg">
-                <span className="firstletter">C</span>
-                <span className="secendletter">o</span>
-                <span className="secendletter">d</span>
-                <span className="secendletter">e</span>
-                <span className="secendletter">i</span>
-                <span className="secendletter">s</span>
-                <span className="secendletter">F</span>
-                <span className="secendletter">U</span>
-                <span className="secendletter">N</span>
-                <span className="dash">_</span>
+      <div className="bgtest">
+                <div className="bgtext">
+                    <span className="firstletter">{this.state.displaySentense}</span>
+                    <span className="dash">_</span>
+                </div>
              </div> 
-          
+             {this.state.displaySentense}
+             <p className="footnote">Photo by Clément H</p>
 
+          
+          
           
           <Container  className="fullwidth">
             <Row id= "project" className="mag">
