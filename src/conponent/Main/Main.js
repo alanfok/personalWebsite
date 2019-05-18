@@ -11,10 +11,6 @@ import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
-import { reject } from 'q';
-import { resolveSoa } from 'dns';
-import { templates } from 'handlebars';
-import { resolve } from 'path';
 
 
 class Main extends Component {
