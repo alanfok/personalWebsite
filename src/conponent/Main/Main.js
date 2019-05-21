@@ -23,7 +23,7 @@ class Main extends Component {
         super(props);
         this.state ={
             width: window.innerWidth,
-            sentense: ["C","O","D","E"],
+            sentense: ["W","E","L","C","O","M","E"],
             displaySentense: []
         }
 
@@ -64,11 +64,11 @@ Sleep = (timeout) =>{
   })
 }
 
-test= async() => {
-  for(var i = 0; i< 4 ; i++)
+wordDisplay= async() => {
+  for(var i = 0; i< this.state.sentense.length ; i++)
   {
       this.sentense(i);
-      await this.Sleep(1000)
+      await this.Sleep(900)
   }
 }
 
@@ -97,7 +97,7 @@ test= async() => {
 
       componentDidMount(){
         aos.init();
-        this.test();
+        this.wordDisplay();
       }
 
 
@@ -137,7 +137,7 @@ test= async() => {
                     <span className="dash">_</span>
                 </div>
              </div> 
-             {this.state.displaySentense}
+            
              <p className="footnote">Photo by Clément H</p>
 
           
@@ -166,6 +166,8 @@ test= async() => {
 
           </Container>
           <hr className="mainHrr"></hr>
+
+          {/*}
           <Container>
             <Row>
               <Col sm="8" className="offset-sm-2">
@@ -178,7 +180,8 @@ test= async() => {
               </Col>
             </Row>
           </Container>
-
+          *}
+}
 
 
 
