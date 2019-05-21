@@ -176,22 +176,8 @@ wordDisplay= async() => {
                   I am pursuing my under-graduation studies with major in I.C.T.(Information & Communication Technology). I have taken courses like DSA, OOPs, Computer Networks, IOT, Web-Data Management over the years and have better understanding of these subjects.I have also been part of S.B.G.(Student Body Govenance) scince my first year of college.
                   </p>
                   </Content>
-                  <Content title="Software Developper at CAE(internship)" year="2018 (4 months)"  sty="pinkInline">
-                  
-                    <ul>
-                      <li>
-                          Maintained the exsiting program(Configuration file management).
-                      </li>
-                      <li>
-                          Motified the functionlity of the program.
-                      </li>
-                      <li>
-                          impliment in C#, C++ programming language and use SQLite for Database
-                      </li>
-                    </ul>
-                  
-
-
+                  <Content title="Software Developper at CAE(internship)" year="2018 (4 months)"  sty="pinkInline">        
+                         <p>I maintained the exsiting program(Configuration file management) and motified its functionlity. The function is impliment by C#, C++ and SQlite.Also I created servel testes to test the new functionality.</p> 
                   </Content>
               </Col>
             </Row>
