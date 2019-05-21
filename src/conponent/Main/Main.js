@@ -10,6 +10,9 @@ import Navbar from '../Navbars/Navbars';
 import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
+//import TimeLine from '../TimeLine/TimeLine';
+import Content from "../Content/Content"
+
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -163,7 +166,45 @@ test= async() => {
 
           </Container>
           <hr className="mainHrr"></hr>
-          
+          <Container>
+            <Row>
+              <Col sm="8" className="offset-sm-2">
+                  <Content title="Undergratude at Concardia" year="2018 to current" sty="pinkInline">
+                  <p>
+                  I am pursuing my under-graduation studies with major in I.C.T.(Information & Communication Technology). I have taken courses like DSA, OOPs, Computer Networks, IOT, Web-Data Management over the years and have better understanding of these subjects.I have also been part of S.B.G.(Student Body Govenance) scince my first year of college.
+                  </p>
+                  </Content>
+                  <Content/>
+              </Col>
+            </Row>
+          </Container>
+
+
+
+
+
+          {/*
+          <Container>
+            <Row>
+              <Col sm="8" className="offset-sm-2">
+                <ul className="timeline">
+                    <TimeLine time="2018(internship)" subject="CAE" icon="http://localhost:3000/static/media/personalSqr.a85016c2.jpg">
+                      <p>Test</p>
+                    </TimeLine>
+                    <TimeLine subject="Bombardier" icon="http://localhost:3000/static/media/personalSqr.a85016c2.jpg">
+                      <p>Test</p>
+                      <p>Test</p>
+                      <p>Test</p>
+                      <p>Test</p>
+                      <p>Test</p>
+                      <p>Test</p>
+                    </TimeLine>
+                </ul>
+              </Col>
+            </Row>
+          </Container>
+            */
+        }
           <div className="mab">
 
 
@@ -195,7 +236,6 @@ test= async() => {
                 <Col sm="6"><Photo/></Col>
                 <Col sm="3"></Col>
           </Row>
-
         </Container>
 
 
