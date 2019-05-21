@@ -18,19 +18,20 @@ export class Content extends Component {
 
   render() {
       const {title, year , sty,children} = this.props;
-      const style = `t_backgroud ${sty}`
+      const style = `t_backgroud ${sty} tfleft`
     return (
         
         <Container>
             <Row>
-                <Col sm="4">
+                <Col sm="3">
        
                     <div className="contain"></div>
                     <div className='circle' data-aos="fade-right"></div>
                 </Col>
-                <Col sm="8">
+                <Col sm="9">
                     <div className={style} data-aos="fade-left">
-                    <span>{title}</span><span>{year}</span>
+                    <span className="tleft">{title}</span><span className="tright">{year}</span>
+                    <br></br>
                     {children}
                     </div>
                 </Col>

@@ -167,8 +167,8 @@ wordDisplay= async() => {
           </Container>
           <hr className="mainHrr"></hr>
 
-          {/*}
           <Container>
+            <h1>TimeLine</h1>
             <Row>
               <Col sm="8" className="offset-sm-2">
                   <Content title="Undergratude at Concardia" year="2018 to current" sty="pinkInline">
@@ -176,12 +176,28 @@ wordDisplay= async() => {
                   I am pursuing my under-graduation studies with major in I.C.T.(Information & Communication Technology). I have taken courses like DSA, OOPs, Computer Networks, IOT, Web-Data Management over the years and have better understanding of these subjects.I have also been part of S.B.G.(Student Body Govenance) scince my first year of college.
                   </p>
                   </Content>
-                  <Content/>
+                  <Content title="Software Developper at CAE(internship)" year="2018 (4 months)"  sty="pinkInline">
+                  
+                    <ul>
+                      <li>
+                          Maintained the exsiting program(Configuration file management).
+                      </li>
+                      <li>
+                          Motified the functionlity of the program.
+                      </li>
+                      <li>
+                          impliment in C#, C++ programming language and use SQLite for Database
+                      </li>
+                    </ul>
+                  
+
+
+                  </Content>
               </Col>
             </Row>
           </Container>
-          *}
-}
+          
+
 
 
 
