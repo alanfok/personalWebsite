@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import {Card,CardHeader,CardBody, Container, Row,Col, Button} from "reactstrap";
 
 import "./SmallWorld.css"
-
+import aos from "aos";
+import 'aos/dist/aos.css';
 
 
 const SmallWorld = props =>{
+    aos.init();
     return(
-
-            <Card className="shadow">
+        <div>
+            <Card className="shadow" data-aos="fade-up">
                             <CardHeader> <h4>game "Small Word" <br/>(C++)</h4></CardHeader>
                             <CardBody>
                                 <ul>
@@ -24,6 +26,7 @@ const SmallWorld = props =>{
                                 <Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>
                             </CardBody>
                         </Card>
+                        </div>
     )
 }
 

@@ -20,7 +20,6 @@ class Photo extends Component {
       aos.init()
     }
     render() {
-
         return (
             <div>
               <hr></hr>
