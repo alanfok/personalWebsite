@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "./Content.css";
 import {Container , Row, Col} from 'reactstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPen} from '@fortawesome/free-solid-svg-icons';
 
 
 import aos from 'aos';
@@ -26,7 +28,7 @@ export class Content extends Component {
                 <Col sm="3">
        
                     <div className="contain"></div>
-                    <div className='circle' data-aos="fade-right"></div>
+                    <div className='circle' data-aos="fade-right"><span className="circle_icon"><FontAwesomeIcon icon={faPen} sm="lg"/></span></div>
                 </Col>
                 <Col sm="9">
                     <div className={style} data-aos="fade-left">

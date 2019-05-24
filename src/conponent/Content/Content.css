@@ -25,6 +25,7 @@
 }
 .tleft{
     float: left;
+    font-weight: bold
 }
 
 .t_backgroud{
@@ -34,4 +35,8 @@
     border-radius: 20px;
     background-color: #eeeeee;
    
+}
+.circle_icon{
+    position: relative;
+    top: 2%
 }
