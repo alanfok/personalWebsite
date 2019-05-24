@@ -7,7 +7,7 @@
 
 .circle{
     border: 4px solid blueviolet;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -38,5 +38,6 @@
 }
 .circle_icon{
     position: relative;
-    top: 2%
+    top: 5%;
+    left:4%;
 }
