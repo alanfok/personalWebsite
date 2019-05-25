@@ -171,12 +171,12 @@ wordDisplay= async() => {
             <h1>TimeLine</h1>
             <Row>
               <Col sm="8" className="offset-sm-2">
-                  <Content title="Undergraduate at Concordia" year="2018 to Current" sty="pinkInline">
+                  <Content title="Undergraduate at Concordia" year="2018 to Current" sty="pinkInline" icon="pen">
                   <p>
                   I am pursuing my undergraduate studies with major in Computer Science. I have taken courses like OOPs, Data structure and algoritum ,operation system and databas over the years and have better understanding of these subjects.
                   </p>
                   </Content>
-                  <Content title="Software Developer at CAE(internship)" year="2018 (4 months)"  sty="pinkInline">        
+                  <Content title="Software Developer at CAE(internship)" year="2018 (4 months)"  sty="pinkInline" icon="faBriefcase">        
                          <p>I maintained the exsiting program(Configuration file management) and motified its functionlity. The function is impliment by C#, C++ and SQlite.Also I created servel testes to test the new functionality.</p> 
                   </Content>
               </Col>
