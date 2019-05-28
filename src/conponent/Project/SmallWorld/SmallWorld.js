@@ -10,7 +10,7 @@ const SmallWorld = props =>{
     aos.init();
     return(
         <div>
-            <Card className="shadow" data-aos="fade-up">
+            <Card className="shadow h-100" data-aos="fade-up">
                             <CardHeader> <h4>game "Small Word" <br/>(C++)</h4></CardHeader>
                             <CardBody>
                                 <ul>
