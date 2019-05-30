@@ -1,13 +1,15 @@
 import React,{Component} from 'react';
 import "./Project.css";
-import {Container, Row,Col} from "reactstrap";
+import {Container, Row,Col,Button} from "reactstrap";
 import {Link} from 'react-router-dom';
 import aos from 'aos';
 import 'aos/dist/aos.css';
 
+import ProjectCard from './ProjectCard/ProjectCard'
 import SmallWorld from './SmallWorld/SmallWorld';
 import RentalApartment from "./RentalApartment/RentalApartment";
 import DatabaseProject from "./DatabaseProject/DatabaseProject";
+import Projectcard from './ProjectCard/ProjectCard';
 
 class Project extends Component{
     constructor(props)
@@ -45,8 +47,8 @@ class Project extends Component{
                     <span data-aos="fade-up"><h1 className="head">PROJECT</h1></span>
                     <Container>
                         <Row >
-                            <Col sm="12" lg="4">                
-                                <SmallWorld/>
+                            <Col sm="12" lg="5">          
+                             <SmallWorld/>
                             </Col>
                         </Row>
                         <br/>
@@ -76,19 +78,41 @@ class Project extends Component{
 
                         <Row >
                             <Col sm="4" lg="4">
-                                <SmallWorld/>
+                                <Projectcard title={"game \"Small Word\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
+                                <ul>
+                                    <li className="textleft">Create by using C++</li>
+                                    <li className="textleft">Using Design Pattern</li>
+                                    <ul >
+                                        <li className="textleft">Strategy</li>
+                                        <li className="textleft">Decorator</li>
+                                        <li className="textleft">Observer</li>
+                                    </ul>
+                                    <li className="textleft">Create map by graph matrix</li>
+                                </ul>                             
+                                </Projectcard>
                             </Col>
                             <Col sm="4" lg="4">
-                                <DatabaseProject/>
+                                <Projectcard title={"Company internal System (Database)"} button={null}>
+                                    <ul className= "textleft">
+                                        <li>Creating the web site by PHP and Database by MySQL for company.</li>
+                                        <li>Using PHP for the backend to connect MySQL.</li>
+                                        <li>Designing the Database Architecture (BCNF, 3NF).</li>
+                                    </ul>                       
+                                </Projectcard>
                             </Col>
                             <Col  sm="4" lg="4">
-                                <RentalApartment/>
+                                <ProjectCard title="Apartment Rental System (Web)(working)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} live={<Button color="primary" href="https://rentalappartment.herokuapp.com/">live</Button>}>
+                                    <ul className= "textleft">
+                                        <li>Using ReactJS, CSS ,Nodejs and MySQL</li>
+                                        <li>Similar the rental system</li>
+                                        <li>Impliment log-in system by using ReactJS</li>
+                                    </ul>
+                                </ProjectCard>
                             </Col>
                         </Row>
                     </Container>
                     <br/>
                     <Link to="/moreSchoolProject">more</Link>
-
                 </div>
             );
         }//End of o need resize

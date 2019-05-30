@@ -2,3 +2,8 @@
 .textleft {
     text-align: left
 }
+
+.pad{
+    padding-top: 15;
+    padding-bottom: 10%
+}
