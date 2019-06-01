@@ -141,9 +141,9 @@ wordDisplay= async() => {
              <p className="footnote">Photo by Clément H</p>   
           <Container  className="fullwidth">
             <Row id= "project" className="mag">
-            <Col>
+            
                   <Project/>
-            </Col>
+  
             </Row>
             </Container>
   

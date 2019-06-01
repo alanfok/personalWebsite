@@ -101,12 +101,13 @@ class Project extends Component{
                                 </Projectcard>
                             </Col>
                             <Col  sm="4" lg="4">
-                                <ProjectCard title="Apartment Rental System (Web)(working)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} live={<Button color="primary" href="https://rentalappartment.herokuapp.com/">live</Button>}>
+                                <ProjectCard title="Apartment Rental System (Web)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} live={<Button color="primary" href="https://rentalappartment.herokuapp.com/">live</Button>}>
                                     <ul className= "textleft">
                                         <li>Using ReactJS, CSS ,Nodejs and MySQL</li>
                                         <li>Similar the rental system</li>
                                         <li>Impliment log-in system by using ReactJS</li>
                                     </ul>
+                                    <p>(in process)</p>
                                 </ProjectCard>
                             </Col>
                         </Row>
