@@ -9,6 +9,12 @@
     background-color: transparent;
     border-color: transparent;
 }
+.navTitleButton:focus{
+    outline:0;
+}
+.navTitleButton:hover{
+   color: orangered
+}
 .LinkenInButton{
     border-radius: 12px;
     margin-right: 4px;
