@@ -3,7 +3,12 @@
 
 }
 
-
+.navTitleButton{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: transparent;
+}
 .LinkenInButton{
     border-radius: 12px;
     margin-right: 4px;
@@ -11,10 +16,7 @@
 .mag{
     margin-bottom: 20
 }
-.navTitle{
- color: white;
- font-weight: bold;
-}
+
 
 .navSelection{
     color: white;

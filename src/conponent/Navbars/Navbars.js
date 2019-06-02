@@ -1,9 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbars.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faGithub, faLinkedin, faMailchimp} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {Redirect} from 'react-router-dom';
 
 
 import {Collapse,
@@ -22,11 +23,14 @@ import {Collapse,
 
 
 
+
 const Navbars = props => {
+ 
+
     return (
         <div>
             <Navbar color="dark" light expand="md" className="fixed-top">
-                <NavbarBrand><span className="navTitle">Alan Website</span></NavbarBrand>
+                <NavbarBrand><button className="navTitleButton" onClick={()=>{window.location.href="/"}}>Alan Website</button></NavbarBrand>
                 <Nav  navbar>
                 <NavItem onMouseEnter={props.trigger1} ><span className="navSelection" >Project/</span></NavItem>
                 <NavItem onMouseEnter={props.trigger2} > <span className="navSelection" >Skill/ </span></NavItem>
