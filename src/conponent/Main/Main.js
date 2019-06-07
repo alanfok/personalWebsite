@@ -29,6 +29,7 @@ class Main extends Component {
 
     }
     componentWillMount(){
+        document.title = "Alan's WebSite"
         window.addEventListener("resize",this.sizeHandler2)
     }
 
