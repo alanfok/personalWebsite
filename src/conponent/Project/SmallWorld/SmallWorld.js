@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card,CardHeader,CardBody, Container, Row,Col, Button} from "reactstrap";
+import {Card,CardHeader,CardBody, Container, Row,Col, Button,CardTitle} from "reactstrap";
 
 import "./SmallWorld.css"
 import aos from "aos";
@@ -10,9 +10,9 @@ const SmallWorld = props =>{
     aos.init();
     return(
         <div>
-            <Card className="shadow" data-aos="fade-up">
+            <Card className="shadow h-100 " data-aos="fade-up">
                             <CardHeader> <h4>game "Small Word" <br/>(C++)</h4></CardHeader>
-                            <CardBody>
+                            <CardBody className="pad">
                                 <ul>
                                     <li className="textleft">Create by using C++</li>
                                     <li className="textleft">Using Design Pattern</li>

@@ -29,6 +29,7 @@ class Main extends Component {
 
     }
     componentWillMount(){
+        document.title = "Alan's WebSite"
         window.addEventListener("resize",this.sizeHandler2)
     }
 
@@ -68,7 +69,7 @@ wordDisplay= async() => {
   for(var i = 0; i< this.state.sentense.length ; i++)
   {
       this.sentense(i);
-      await this.Sleep(900)
+      await this.Sleep(800)
   }
 }
 
@@ -138,16 +139,12 @@ wordDisplay= async() => {
                 </div>
              </div> 
             
-             <p className="footnote">Photo by Clément H</p>
-
-          
-          
-          
+             <p className="footnote">Photo by Clément H</p>   
           <Container  className="fullwidth">
             <Row id= "project" className="mag">
-            <Col>
+            
                   <Project/>
-            </Col>
+  
             </Row>
             </Container>
   
@@ -167,21 +164,26 @@ wordDisplay= async() => {
           </Container>
           <hr className="mainHrr"></hr>
 
-          {/*}
           <Container>
+            <h1>TimeLine</h1>
             <Row>
               <Col sm="8" className="offset-sm-2">
-                  <Content title="Undergratude at Concardia" year="2018 to current" sty="pinkInline">
+                  <Content title="Undergraduate at Concordia" year="2018 to Current" sty="pinkInline" icon="pen">
                   <p>
-                  I am pursuing my under-graduation studies with major in I.C.T.(Information & Communication Technology). I have taken courses like DSA, OOPs, Computer Networks, IOT, Web-Data Management over the years and have better understanding of these subjects.I have also been part of S.B.G.(Student Body Govenance) scince my first year of college.
+                  I am pursuing my undergraduate studies with major in Computer Science. I have taken courses like OOPs, Data structure and algoritum ,operation system and databas over the years and have better understanding of these subjects.
                   </p>
                   </Content>
-                  <Content/>
+                  <Content title="Software Developer at CAE(internship)" year="2018 (4 months)"  sty="pinkInline" icon="faBriefcase">        
+                         <p>I maintained the exsiting program(Configuration file management) and motified its functionlity. The function is impliment by C#, C++ and SQlite.Also I created servel testes to test the new functionality.</p> 
+                  </Content>
+                  <Content title="College at Lasalle" year="2005-2008"  sty="pinkInline" icon="pen">        
+                         <p>I pursued a degree with accounting and business management. I have taken courese like accounting , management and planning for the business.</p> 
+                  </Content>
               </Col>
             </Row>
           </Container>
-          *}
-}
+          
+
 
 
 

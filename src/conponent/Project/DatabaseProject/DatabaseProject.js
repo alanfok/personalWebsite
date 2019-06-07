@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const DatabaseProject  = props =>{
     aos.init();
     return(
-        <Card className="shadow" data-aos="fade-up">
+        <Card className="shadow h-100" data-aos="fade-up">
         <CardHeader> <h4>Company internal System (Database)</h4></CardHeader>
         <CardBody>
             <ul className= "textleft">
