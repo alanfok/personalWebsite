@@ -37,7 +37,7 @@ const Navbars = props => {
                 <NavItem onMouseEnter={props.trigger3} ><span className="navSelection" >About me/ </span> </NavItem>
                 </Nav>
                 <Nav  className="ml-auto">
-                <NavItem><Button a href="mailto:alan606con@gmail.com" className="LinkenInButton" ><FontAwesomeIcon icon={faEnvelope} size='lg'/></Button></NavItem>
+                <NavItem><Button a href="mailto:alan606@gmail.com" className="LinkenInButton" ><FontAwesomeIcon icon={faEnvelope} size='lg'/></Button></NavItem>
                     <NavItem><Button a href="https://www.linkedin.com/in/fok-poon-kai-alan-850417151/" className="LinkenInButton" ><FontAwesomeIcon icon={faLinkedin} size='lg'/></Button></NavItem>
                     <NavItem><Button a href="https://github.com/alanfok" className="gitbutton" ><FontAwesomeIcon icon={faGithub} size='lg'/></Button></NavItem>
                 </Nav>
