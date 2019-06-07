@@ -78,7 +78,7 @@ class Project extends Component{
 
                         <Row >
                             <Col sm="4" lg="4">
-                                <Projectcard title={"game \"Small Word\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
+                                <Projectcard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
                                 <ul>
                                     <li className="textleft">Create by using C++</li>
                                     <li className="textleft">Using Design Pattern</li>
