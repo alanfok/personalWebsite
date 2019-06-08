@@ -174,10 +174,10 @@ wordDisplay= async() => {
                   </p>
                   </Content>
                   <Content title="Software Developer at CAE(internship)" year="2018 (4 months)"  sty="pinkInline" icon="faBriefcase">        
-                         <p>I maintained the exsiting program(Configuration file management) and motified its functionlity. The function is impliment by C#, C++ and SQlite.Also I created servel testes to test the new functionality.</p> 
+                         <p>I maintained the existing program(Configuration file management) and modified its functionality. The program is written by C#, C++ and SQlite.Also I created servel testes(Unit test) to test the new functionality.</p> 
                   </Content>
                   <Content title="College at Lasalle" year="2005-2008"  sty="pinkInline" icon="pen">        
-                         <p>I pursued a degree with accounting and business management. I have taken courese like accounting , management and planning for the business.</p> 
+                         <p>I pursued a degree with accounting and business management. I have taken courses like accounting , management and planning for the business.</p> 
                   </Content>
               </Col>
             </Row>
