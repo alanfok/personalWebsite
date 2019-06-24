@@ -32,7 +32,7 @@ class Main extends Component {
     componentWillMount(){
         document.title = "Alan's WebSite"
         window.addEventListener("resize",this.sizeHandler2)
-        this.BGpreLoad();
+  
     }
 
 
@@ -104,16 +104,6 @@ wordDisplay= async() => {
      
       if(!isMobile)
       {//isLaptop
-            if(!this.state.BGpreloaded)
-            {
-              return(
-                  <div className="Loadimg">
-                          <Spinner color="primary"/>
-                          <p>Image is laoding</p>
-                  </div>
-              );
-            }
-            else{
             return (
                 <div>
           <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
@@ -170,7 +160,6 @@ wordDisplay= async() => {
               </div>
                           </div>
             );
-      }
       }//END isLaptop
       else//is Mobile
       {
