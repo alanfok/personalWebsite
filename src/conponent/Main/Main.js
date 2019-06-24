@@ -12,7 +12,6 @@ import Navbar from '../Navbars/Navbars';
 import Photo from '../Photo/Photo'
 import Skill from '../Skill/Skill';
 import Project from '../Project/Project';
-//import TimeLine from '../TimeLine/TimeLine';
 import Content from "../Content/Content"
 
 
@@ -41,22 +40,9 @@ class Main extends Component {
         window.removeEventListener("resize",this.sizeHandler2)
     }
 
-  
 /*
-  newSentense = async() =>{
-     for (var i=0; i<4 ; i++){
-       await this.temps(i);
-     }
-   }
-
-   temps = (i) =>{
-    return new Promise((resolve)=>
-    {
-      setTimeout(()=>resolve(this.sentense(i)),1000);
-    });
-}
+The Backgroud img preload
 */
-
 BGpreLoad =()=>{
   var img = new Image();
   img.src=BGimg;
@@ -121,8 +107,9 @@ wordDisplay= async() => {
             if(!this.state.BGpreloaded)
             {
               return(
-                  <div>
+                  <div className="Loadimg">
                           <Spinner color="primary"/>
+                          <p>Image is laoding</p>
                   </div>
               );
             }
