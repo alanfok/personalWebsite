@@ -43,7 +43,7 @@
 }
 
 .bgtest{
-    background-image: url(../../photo/clement-h-544786-unsplash.jpg);
+    background-image: url(../../photo/clement-h-544786-unsplashv1.jpg);
     height: 120px;
     padding: 30%;
     background-size: cover;
@@ -51,6 +51,9 @@
 
 }
 
+.Loadimg{
+    margin-top: 25%
+}
 
 .bgtext{
     margin-top: 35%
