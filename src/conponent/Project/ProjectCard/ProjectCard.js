@@ -9,7 +9,7 @@ import "./ProjectCard.css"
 export default class Projectcard extends Component {
     render() {
         aos.init();
-        const{title,children,button,live} = this.props;
+        const{title,children,button,demo} = this.props;
         return (
             <div className='card cardtext'  data-aos="fade-up">
                     <div className='card-header'><h3>{title}</h3></div>
@@ -18,7 +18,7 @@ export default class Projectcard extends Component {
                             {children}
                         </div>
                         <div>
-                            {button}&nbsp;{live}
+                            {button}&nbsp;{demo}
                         </div>
                     
                     </div>   
