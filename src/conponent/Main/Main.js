@@ -142,13 +142,16 @@ wordDisplay= async() => {
                 <h1>TimeLine</h1>
                 <Row>
                   <Col sm="8" className="offset-sm-2">
-                      <Content title="Undergraduate at Concordia" year="2018 to Current" sty="pinkInline" icon="pen">
+                      <Content title="Undergraduate at Concordia" year="2017 to Current" sty="pinkInline" icon="pen">
                       <p>
                       I am pursuing my undergraduate studies with major in Computer Science. I have taken courses like OOPs, Data structure and algoritum ,operation system and databas over the years and have better understanding of these subjects.
                       </p>
                       </Content>
                       <Content title="Software Developer at CAE(internship)" year="2018 (4 months)"  sty="pinkInline" icon="faBriefcase">        
                             <p>I maintained the existing program(Configuration file management) and modified its functionality. The program is written by C#, C++ and SQlite.Also I created servel testes(Unit test) to test the new functionality.</p> 
+                      </Content>
+                      <Content title="Le Gourmand De Szechuan(Chef Assistant)" year="2008-2017"  sty="pinkInline" icon="faBriefcase">        
+                            <p>I prepared the food, maintained kitchen clearance. Learnt how to muilt-tasking and how to cooperate with people.</p> 
                       </Content>
                       <Content title="College at Lasalle" year="2005-2008"  sty="pinkInline" icon="pen">        
                             <p>I pursued a degree with accounting and business management. I have taken courses like accounting , management and planning for the business.</p> 
