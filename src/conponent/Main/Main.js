@@ -139,7 +139,7 @@ wordDisplay= async() => {
               </Container>
               <hr className="mainHrr"></hr>
               <Container>
-                <h1>TimeLine</h1>
+                <h1>TIMELINE</h1>
                 <Row>
                   <Col sm="8" className="offset-sm-2">
                       <Content title="Undergraduate at Concordia" year="2017 to Current" sty="pinkInline" icon="pen">
