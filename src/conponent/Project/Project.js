@@ -107,7 +107,7 @@ class Project extends Component{
                                         <li>Similar the rental system</li>
                                         <li>Impliment log-in system by using ReactJS</li>
                                     </ul>
-                                    <p>(in process) <br/> username:abc <br/>password:123</p>
+                                    <p>(in process) </p>
                                 </ProjectCard>
                             </Col>
                         </Row>
