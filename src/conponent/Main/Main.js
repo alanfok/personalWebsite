@@ -154,7 +154,7 @@ wordDisplay= async() => {
                             <p>I prepared the food, maintained kitchen clearance. Learnt how to muilt-tasking and how to cooperate with people.</p> 
                       </Content>
                       <Content title="College at Lasalle" year="2005-2008"  sty="pinkInline" icon="pen">        
-                            <p>I pursued a degree with accounting and business management. I have taken courses like accounting , management and planning for the business.</p> 
+                            <p>I pursued a degree in accounting and business management. I have taken courses like accounting, management, and planning for the business.</p> 
                       </Content>
                   </Col>
                 </Row>
