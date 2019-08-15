@@ -1,10 +1,19 @@
 .head{
     margin-top: 2%;
- margin-bottom: 2%
+    margin-bottom: 2%
 }
 
 
 .headResize{
     margin-top: 4%;
- margin-bottom: 2%
+    margin-bottom: 2%
+}
+
+.projectMoreButton
+{
+    background-color: rgb(78, 78, 245);
+    border-radius: 50px;
+    padding: 2px 10px;
+    color:rgb(247, 247, 247);
+    font-weight: 600;
 }

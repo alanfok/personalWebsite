@@ -37,6 +37,7 @@ class Project extends Component{
         this.setState({width: window.innerWidth});
     }
     render(){
+        aos.init();
         const {width} = this.state;
         const isNeedResize = width<994;
        
@@ -75,7 +76,6 @@ class Project extends Component{
                 <div className="text">
                     <h1 className="head" data-aos="fade-up">PROJECT</h1>
                     <Container>
-
                         <Row >
                             <Col sm="4" lg="4">
                                 <Projectcard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
@@ -113,7 +113,7 @@ class Project extends Component{
                         </Row>
                     </Container>
                     <br/>
-                    <Link to="/moreSchoolProject">more</Link>
+                    <Link to="/moreSchoolProject"><button className="projectMoreButton" data-aos="fade-up">more</button></Link>
                 </div>
             );
         }//End of o need resize
