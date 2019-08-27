@@ -95,7 +95,7 @@ wordDisplay= async() => {
 
       test4 =()=>{
         var eml= document.getElementById('timeline');
-        eml.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        eml.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }
 
       componentDidMount(){
