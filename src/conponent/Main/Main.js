@@ -93,6 +93,11 @@ wordDisplay= async() => {
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
 
+      test4 =()=>{
+        var eml= document.getElementById('timeline');
+        eml.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+      }
+
       componentDidMount(){
         aos.init();
         this.wordDisplay();
@@ -106,7 +111,7 @@ wordDisplay= async() => {
       {//isLaptop
             return (
                 <div>
-          <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+          <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3} trigger4={this.test4}/>
           <div className="bgtest">
                     <div className="bgtext">
                         <span className="firstletter">{this.state.displaySentense}</span>
@@ -129,7 +134,7 @@ wordDisplay= async() => {
                     <Col sm="12"><Skill/></Col>
                     </Col>
                 </Row>
-
+                <hr className="mainHrr"></hr>
                 <Row id= "photo"  className="mainphoto" >    
                       <Col sm="3"></Col>
                       <Col sm="6"><Photo/></Col>
@@ -137,9 +142,11 @@ wordDisplay= async() => {
                 </Row>
 
               </Container>
-              <hr className="mainHrr"></hr>
+              <hr className="mainHrr" id="timeline" ></hr>
               <Container>
-                <h1>TIMELINE</h1>
+                <Row>
+                <Col><h1>Timeline</h1></Col>
+                </Row>
                 <Row>
                   <Col sm="8" className="offset-sm-2">
                       <Content title="Undergraduate at Concordia" year="2017 to Current" sty="pinkInline" icon="pen">

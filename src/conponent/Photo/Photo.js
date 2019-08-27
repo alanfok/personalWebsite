@@ -22,7 +22,6 @@ class Photo extends Component {
     render() {
         return (
             <div>
-              <hr></hr>
               <h1 data-aos="fade-up">About me</h1>
               <br/>
               <div data-aos="fade-up">
