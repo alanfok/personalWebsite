@@ -32,7 +32,7 @@ export default class AnotherSchool extends Component {
                 </ProjectCard>
               </Col>
               <Col sm="4">
-              <ProjectCard title="Java Calculator" button={<Button color="success" a href="https://github.com/alanfok/Comp371DuckHunt">sourceCode(Git)</Button>}>
+              <ProjectCard title="Java Calculator" button={<Button color="success" a href="https://github.com/Fair-Child/Calculator">sourceCode(Git)</Button>}>
                 <ul className="wordleft">
                         <li>created the scientific Calculator by using Java</li>
                         <li>used MVC data structure</li>
