@@ -78,19 +78,24 @@ wordDisplay= async() => {
         this.setState({width: window.innerWidth});
     }
 
-    test1 =()=>{
+      toProject =()=>{
         var eml= document.getElementById('project');
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
 
-      test2 =()=>{
+      toSkill =()=>{
         var eml= document.getElementById('skill');
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
       }
    
-      test3 =()=>{
+      toPhoto =()=>{
         var eml= document.getElementById('photo');
         eml.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+      }
+
+      toTimeline =()=>{
+        var eml= document.getElementById('timeline');
+        eml.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }
 
       componentDidMount(){
@@ -106,7 +111,7 @@ wordDisplay= async() => {
       {//isLaptop
             return (
                 <div>
-          <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+          <Navbar trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
           <div className="bgtest">
                     <div className="bgtext">
                         <span className="firstletter">{this.state.displaySentense}</span>
@@ -116,10 +121,8 @@ wordDisplay= async() => {
                 
                 <p className="footnote">Photo by Clément H</p>   
               <Container  className="fullwidth">
-                <Row id= "project" className="mag">
-                
-                      <Project/>
-      
+                <Row id= "project" className="mag">               
+                      <Project/>      
                 </Row>
                 </Container>
       
@@ -129,7 +132,7 @@ wordDisplay= async() => {
                     <Col sm="12"><Skill/></Col>
                     </Col>
                 </Row>
-
+                <hr className="mainHrr"></hr>
                 <Row id= "photo"  className="mainphoto" >    
                       <Col sm="3"></Col>
                       <Col sm="6"><Photo/></Col>
@@ -137,9 +140,11 @@ wordDisplay= async() => {
                 </Row>
 
               </Container>
-              <hr className="mainHrr"></hr>
+              <hr className="mainHrr" id="timeline" ></hr>
               <Container>
-                <h1>TIMELINE</h1>
+                <Row>
+                <Col><h1>Timeline</h1></Col>
+                </Row>
                 <Row>
                   <Col sm="8" className="offset-sm-2">
                       <Content title="Undergraduate at Concordia" year="2017 to Current" sty="pinkInline" icon="pen">
@@ -168,7 +173,7 @@ wordDisplay= async() => {
       {
         return (
           <div>
-    <Navbar trigger1={this.test1} trigger2={this.test2} trigger3={this.test3}/>
+    <Navbar trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
         <Container  className="fullwidth">
           <Row id= "project" className="magMobile">
           <Col>

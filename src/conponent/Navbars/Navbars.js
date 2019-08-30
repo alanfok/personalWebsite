@@ -31,10 +31,11 @@ const Navbars = props => {
         <div>
             <Navbar color="dark" light expand="md" className="fixed-top">
                 <NavbarBrand><button className="navTitleButton" onClick={()=>{window.location.href="/"}}>Alan Website</button></NavbarBrand>
-                <Nav  navbar>
-                <NavItem onMouseEnter={props.trigger1} ><span className="navSelection" >Project/</span></NavItem>
-                <NavItem onMouseEnter={props.trigger2} > <span className="navSelection" >Skill/ </span></NavItem>
-                <NavItem onMouseEnter={props.trigger3} ><span className="navSelection" >About me/ </span> </NavItem>
+                <Nav  navbar className="">
+                <NavItem onClick={props.trigger1} ><span className="navSelection" >Project</span></NavItem>&nbsp;<span className="navWhite">•</span>&nbsp;
+                <NavItem onClick={props.trigger2} > <span className="navSelection" >Skill</span></NavItem>&nbsp;<span className="navWhite">•</span>&nbsp;
+                <NavItem onClick={props.trigger3} ><span className="navSelection" >About me</span> </NavItem>&nbsp;<span className="navWhite">•</span>&nbsp;
+                <NavItem onClick={props.trigger4} ><span className="navSelection" >Timeline</span> </NavItem>
                 </Nav>
                 <Nav  className="ml-auto">
                 <NavItem><Button a href="mailto:alan606@gmail.com" className="LinkenInButton" ><FontAwesomeIcon icon={faEnvelope} size='lg'/></Button></NavItem>

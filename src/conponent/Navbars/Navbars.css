@@ -23,7 +23,15 @@
     margin-bottom: 20
 }
 
-
-.navSelection{
+.navWhite{
     color: white;
    }
+.navSelection{
+    top: 10px;
+    color: white;
+   }
+
+.navSelection:hover{
+    color: white;
+    border-bottom: 3px solid peru;
+}
