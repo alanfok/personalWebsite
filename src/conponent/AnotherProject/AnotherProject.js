@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import {Container ,Col , Row} from 'reactstrap'
+import {Container ,Col , Row ,Button} from 'reactstrap'
 
 import Pong from './PongGame/Pong'
+import ProjectCard from '../Project/ProjectCard/ProjectCard';
+
 
 
 import './AnotherProject.css';
@@ -13,10 +15,21 @@ export default class AnotherSchool extends Component {
          <Container>
             <Row>
               <Col sm="4">
-                <Pong/>
+                <ProjectCard title="Pong game">
+                <ul className="wordleft">
+                        <li>created the pong game by unity</li>
+                        <li>using C# to implement the object in the game</li>
+                </ul>    
+                </ProjectCard>
               </Col>
               <Col sm="4">
-              
+              <ProjectCard title="Duck Hunt" button={<Button color="success" a href="https://github.com/alanfok/Comp371DuckHunt">sourceCode(Git)</Button>}>
+                <ul className="wordleft">
+                        <li>created the duck hunt by using OpenGL</li>
+                        <li>coded in C++</li>
+                        <li>included the lighting, animation and collision</li>
+                </ul>    
+                </ProjectCard>
               </Col>
               <Col sm="4">
               
