@@ -105,7 +105,7 @@ wordDisplay= async() => {
 
     render() {
       const {width} = this.state;
-      const isMobile = width <420;
+      const isMobile = width <769;
      
       if(!isMobile)
       {//isLaptop
