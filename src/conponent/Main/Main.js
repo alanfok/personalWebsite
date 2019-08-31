@@ -111,7 +111,7 @@ wordDisplay= async() => {
       {//isLaptop
             return (
                 <div>
-          <Navbar trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
+          <Navbar isMobile={false} trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
           <div className="bgtest">
                     <div className="bgtext">
                         <span className="firstletter">{this.state.displaySentense}</span>
@@ -173,7 +173,7 @@ wordDisplay= async() => {
       {
         return (
           <div>
-    <Navbar trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
+    <Navbar isMobile={true} trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
         <Container  className="fullwidth">
           <Row id= "project" className="magMobile">
           <Col>
