@@ -26,7 +26,7 @@ import {Collapse,
 
 const Navbars = props => {
  
-
+    if(!props.isMobile){
     return (
         <div>
             <Navbar color="dark" light expand="md" className="fixed-top">
@@ -45,6 +45,22 @@ const Navbars = props => {
             </Navbar>
         </div>
     );
+    }
+    else
+    {
+        return (
+            <div>
+                <Navbar color="dark" light expand="md" className="fixed-top">
+                    <NavbarBrand><button className="navTitleButton" onClick={()=>{window.location.href="/"}}>Alan Website</button></NavbarBrand>
+                    <Nav  className="ml-auto">
+                    <NavItem><Button a href="mailto:alan606@gmail.com" className="LinkenInButton" ><FontAwesomeIcon icon={faEnvelope} size='lg'/></Button></NavItem>
+                        <NavItem><Button a href="https://www.linkedin.com/in/fok-poon-kai-alan-850417151/" className="LinkenInButton" ><FontAwesomeIcon icon={faLinkedin} size='lg'/></Button></NavItem>
+                        <NavItem><Button a href="https://github.com/alanfok" className="gitbutton" ><FontAwesomeIcon icon={faGithub} size='lg'/></Button></NavItem>
+                    </Nav>
+                </Navbar>
+            </div>
+        );
+    }
 };
 
 

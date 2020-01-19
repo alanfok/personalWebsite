@@ -12,7 +12,6 @@ import Navbar from './conponent/Navbars/Navbars'
 function App() {
   return (
     <div className="App">
-      <Navbar/>
       <Router>
       <Route exact path="/" component={Main}/>
       <Route exact path="/moreSchoolProject" component={AnotherSchool}/>

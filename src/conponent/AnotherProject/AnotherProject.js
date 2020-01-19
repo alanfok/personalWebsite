@@ -1,18 +1,46 @@
 import React, { Component } from 'react'
 import {Container ,Col , Row ,Button} from 'reactstrap'
 
-import Pong from './PongGame/Pong'
 import ProjectCard from '../Project/ProjectCard/ProjectCard';
-
+import Navbar from '../Navbars/Navbars';
 
 
 import './AnotherProject.css';
 
+
+
 export default class AnotherSchool extends Component {
+
+
+  constructor(props)
+  {
+    super(props);
+    this.state = {
+      width: window.innerWidth,
+    }
+  }
+
+  componentWillMount(){
+    document.title = "Alan's WebSite"
+    window.addEventListener("resize",this.sizeHandler2)
+
+}
+
+
+componentWillUnmount(){
+    window.removeEventListener("resize",this.sizeHandler2)
+}
+
+sizeHandler2 =()=>{
+  this.setState({width: window.innerWidth});
+}
+
   render() {
+    const isMobile = this.state.width <769;
     return (
-      <div className="martop">
-         <Container>
+      <div >
+        <Navbar isMobile={isMobile} trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
+         <Container className="martop">
             <Row>
               <Col sm="4">
                 <ProjectCard title="Pong game">

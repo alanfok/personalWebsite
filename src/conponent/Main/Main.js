@@ -105,13 +105,13 @@ wordDisplay= async() => {
 
     render() {
       const {width} = this.state;
-      const isMobile = width <420;
+      const isMobile = width <769;
      
       if(!isMobile)
       {//isLaptop
             return (
                 <div>
-          <Navbar trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
+          <Navbar isMobile={false} trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
           <div className="bgtest">
                     <div className="bgtext">
                         <span className="firstletter">{this.state.displaySentense}</span>
@@ -155,10 +155,10 @@ wordDisplay= async() => {
                       <Content title="Software Developer at CAE(internship)" year="2018 (4 months)"  sty="pinkInline" icon="faBriefcase">        
                             <p>I maintained the existing program(Configuration file management) and modified its functionality. The program is written by C#, C++ and SQlite.Also I created servel testes(Unit test) to test the new functionality.</p> 
                       </Content>
-                      <Content title="Le Gourmand De Szechuan(Chef Assistant)" year="2008-2017"  sty="pinkInline" icon="faBriefcase">        
+                      <Content title="Le Gourmand De Szechuan(Chef Assistant)" year="2010-2017"  sty="pinkInline" icon="faBriefcase">        
                             <p>I prepared the food, maintained kitchen clearance. Learnt how to muilt-tasking and how to cooperate with people.</p> 
                       </Content>
-                      <Content title="College at Lasalle" year="2005-2008"  sty="pinkInline" icon="pen">        
+                      <Content title="College at Lasalle" year="2005-2010"  sty="pinkInline" icon="pen">        
                             <p>I pursued a degree in accounting and business management. I have taken courses like accounting, management, and planning for the business.</p> 
                       </Content>
                   </Col>
@@ -173,7 +173,7 @@ wordDisplay= async() => {
       {
         return (
           <div>
-    <Navbar trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
+    <Navbar isMobile={true} trigger1={this.toProject} trigger2={this.toSkill} trigger3={this.toPhoto} trigger4={this.toTimeline}/>
         <Container  className="fullwidth">
           <Row id= "project" className="magMobile">
           <Col>
