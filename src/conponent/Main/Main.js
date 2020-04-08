@@ -120,7 +120,7 @@ wordDisplay= async() => {
                 </div> 
                 
                 <p className="footnote">Photo by Clément H</p>   
-              <Container  className="fullwidth">
+              <Container>
                 <Row id= "project" className="mag">               
                       <Project/>      
                 </Row>

@@ -17,3 +17,7 @@
     color:rgb(247, 247, 247);
     font-weight: 600;
 }
+.center {
+    display: flex;
+    justify-content: center;
+}
