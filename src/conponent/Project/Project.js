@@ -9,7 +9,7 @@ import ProjectCard from './ProjectCard/ProjectCard'
 import SmallWorld from './SmallWorld/SmallWorld';
 import RentalApartment from "./RentalApartment/RentalApartment";
 import DatabaseProject from "./DatabaseProject/DatabaseProject";
-import Projectcard from './ProjectCard/ProjectCard';
+
 
 class Project extends Component{
     constructor(props)
@@ -47,7 +47,7 @@ class Project extends Component{
         if(isNeedResize) //Mobile Mode
         {
             return(
-                <div>
+                <div >
                     <span data-aos="fade-up"><h1 className="head">PROJECT</h1></span>
                     <Container>
                         <Row >
@@ -76,91 +76,96 @@ class Project extends Component{
         else //No Need Resize
         {
             return (
-                <div className="text">
-                    <h1 className="head" data-aos="fade-up">PROJECT</h1>
-                    <Container>
-                        <Row >
-                            <Col sm="4" lg="4">
-                                <Projectcard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
-                                <ul>
-                                    <li className="textleft">Create by using C++</li>
-                                    <li className="textleft">Using Design Pattern</li>
-                                    <ul >
-                                        <li className="textleft">Strategy</li>
-                                        <li className="textleft">Decorator</li>
-                                        <li className="textleft">Observer</li>
-                                    </ul>
-                                    <li className="textleft">Create map by graph matrix</li>
-                                </ul>                             
-                                </Projectcard>
-                            </Col>
-                            <Col sm="4" lg="4">
-                                <Projectcard title={"Company internal System (Database)"} button={null}>
-                                    <ul className= "textleft">
-                                        <li>Creating the web site by PHP and Database by MySQL for company.</li>
-                                        <li>Using PHP for the backend to connect MySQL.</li>
-                                        <li>Designing the Database Architecture (BCNF, 3NF).</li>
-                                    </ul>                       
-                                </Projectcard>
-                            </Col>
-                            <Col  sm="4" lg="4">
-                                <ProjectCard title="Apartment Rental System (Web)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} demo={<Button color="primary" href="https://rentalappartment.herokuapp.com/">Demo</Button>}>
-                                    <ul className= "textleft">
-                                        <li>Using ReactJS, CSS ,Nodejs and MySQL</li>
-                                        <li>Similar the rental system</li>
-                                        <li>Impliment log-in system by using ReactJS</li>
-                                    </ul>
-                                    <p>(in process) </p>
-                                </ProjectCard>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <br/>
-                    
-                    <Collapse isOpen={this.state.toggle}>
-                    <Container>
-                        <Row >
-                            <Col sm="4" lg="4">
-                                <Projectcard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
-                                <ul>
-                                    <li className="textleft">Create by using C++</li>
-                                    <li className="textleft">Using Design Pattern</li>
-                                    <ul >
-                                        <li className="textleft">Strategy</li>
-                                        <li className="textleft">Decorator</li>
-                                        <li className="textleft">Observer</li>
-                                    </ul>
-                                    <li className="textleft">Create map by graph matrix</li>
-                                </ul>                             
-                                </Projectcard>
-                            </Col>
-                            <Col sm="4" lg="4">
-                                <Projectcard title={"Company internal System (Database)"} button={null}>
-                                    <ul className= "textleft">
-                                        <li>Creating the web site by PHP and Database by MySQL for company.</li>
-                                        <li>Using PHP for the backend to connect MySQL.</li>
-                                        <li>Designing the Database Architecture (BCNF, 3NF).</li>
-                                    </ul>                       
-                                </Projectcard>
-                            </Col>
-                            <Col  sm="4" lg="4">
-                                <ProjectCard title="Apartment Rental System (Web)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} demo={<Button color="primary" href="https://rentalappartment.herokuapp.com/">Demo</Button>}>
-                                    <ul className= "textleft">
-                                        <li>Using ReactJS, CSS ,Nodejs and MySQL</li>
-                                        <li>Similar the rental system</li>
-                                        <li>Impliment log-in system by using ReactJS</li>
-                                    </ul>
-                                    <p>(in process) </p>
-                                </ProjectCard>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <br/>
-                </Collapse>
-                    <button className="projectMoreButton" data-aos="fade-up" onClick={()=>this.setState({toggle : !this.state.toggle})}>more</button>
-                    {/** 
-                    <Link to="/moreSchoolProject"><button className="projectMoreButton" data-aos="fade-up">more</button></Link>
-                    */}
+                <div className="center">
+                    <div className="text">
+                        <h1 className="head" data-aos="fade-up">PROJECT</h1>
+                        <Container>
+                            <Row >
+                                <Col sm="4" lg="4">
+                                    <ProjectCard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
+                                    <ul>
+                                        <li className="textleft">Create by using C++</li>
+                                        <li className="textleft">Using Design Pattern</li>
+                                        <ul >
+                                            <li className="textleft">Strategy</li>
+                                            <li className="textleft">Decorator</li>
+                                            <li className="textleft">Observer</li>
+                                        </ul>
+                                        <li className="textleft">Create map by graph matrix</li>
+                                    </ul>                             
+                                    </ProjectCard>
+                                </Col>
+                                <Col sm="4" lg="4">
+                                    <ProjectCard title={"Company internal System (Database)"} button={null}>
+                                        <ul className= "textleft">
+                                            <li>Creating the web site by PHP and Database by MySQL for company.</li>
+                                            <li>Using PHP for the backend to connect MySQL.</li>
+                                            <li>Designing the Database Architecture (BCNF, 3NF).</li>
+                                        </ul>                       
+                                    </ProjectCard>
+                                </Col>
+                                <Col  sm="4" lg="4">
+                                    <ProjectCard title="Apartment Rental System (Web)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} demo={<Button color="primary" href="https://rentalappartment.herokuapp.com/">Demo</Button>}>
+                                        <ul className= "textleft">
+                                            <li>Using ReactJS, CSS ,Nodejs and MySQL</li>
+                                            <li>Similar the rental system</li>
+                                            <li>Impliment log-in system by using ReactJS</li>
+                                        </ul>
+                                        <p>(in process) </p>
+                                    </ProjectCard>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <br/>
+                        
+                        <Collapse isOpen={this.state.toggle}>
+                        <Container>
+                            <Row >
+                                <Col sm="4" lg="4">
+                                    <ProjectCard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
+                                    <ul>
+                                        <li className="textleft">Create by using C++</li>
+                                        <li className="textleft">Using Design Pattern</li>
+                                        <ul >
+                                            <li className="textleft">Strategy</li>
+                                            <li className="textleft">Decorator</li>
+                                            <li className="textleft">Observer</li>
+                                        </ul>
+                                        <li className="textleft">Create map by graph matrix</li>
+                                    </ul>                             
+                                    </ProjectCard>
+                                </Col>
+                                <Col sm="4" lg="4">
+                                    <ProjectCard title={"Company internal System (Database)"} button={null}>
+                                        <ul className= "textleft">
+                                            <li>Creating the web site by PHP and Database by MySQL for company.</li>
+                                            <li>Using PHP for the backend to connect MySQL.</li>
+                                            <li>Designing the Database Architecture (BCNF, 3NF).</li>
+                                        </ul>                       
+                                    </ProjectCard>
+                                </Col>
+                                <Col  sm="4" lg="4">
+                                    <ProjectCard title="Apartment Rental System (Web)" button={<Button color="success" href="https://github.com/alanfok/rental_apartment">sourceCode(Git)</Button>} demo={<Button color="primary" href="https://rentalappartment.herokuapp.com/">Demo</Button>}>
+                                        <ul className= "textleft">
+                                            <li>Using ReactJS, CSS ,Nodejs and MySQL</li>
+                                            <li>Similar the rental system</li>
+                                            <li>Impliment log-in system by using ReactJS</li>
+                                        </ul>
+                                        <p>(in process) </p>
+                                    </ProjectCard>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <br/>
+                    </Collapse>
+                    <Button color="info" data-aos="fade-up" onClick={()=>this.setState({toggle : !this.state.toggle})}>{(this.state.toggle)?'Less ▲':'More ▼'}</Button>
+                         {/** 
+
+                        <button className="projectMoreButton" data-aos="fade-up" onClick={()=>this.setState({toggle : !this.state.toggle})}>{(this.state.toggle)?'less':'more'}</button>
+                   
+                        <Link to="/moreSchoolProject"><button className="projectMoreButton" data-aos="fade-up">more</button></Link>
+                        */}
+                    </div>
                 </div>
             );
         }//End of o need resize

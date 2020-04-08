@@ -3,7 +3,7 @@ import {Row,Container,Col,Button} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./Skill.css"
 import csharp from "../../photo/FyR1o1Wc.png"
-import { faJs, faNodeJs, faJsSquare, faNode, faReact, faNpm } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faNodeJs, faJsSquare, faNode, faReact, faNpm ,faAngular} from '@fortawesome/free-brands-svg-icons';
 import { faDatabase} from '@fortawesome/free-solid-svg-icons';
 
 import aos from 'aos';
@@ -51,6 +51,19 @@ const skill = props => {
                     <p data-aos= "fade-up"><FontAwesomeIcon icon={faDatabase} size="4x"/><br/>mySQL</p>
                     </Col>     
                 </Row>
+                <Row>
+                    <Col sm="2"></Col>
+                    <Col sm ="3"> 
+                    
+                    </Col>
+                    <Col sm="2">
+                    <p data-aos= "fade-up"><FontAwesomeIcon icon={faAngular} size="4x"/><br/>npm</p>                  
+                    </Col>
+                    <Col sm="3">
+                    
+                    </Col>     
+                </Row>
+
 
             </Container>
 
