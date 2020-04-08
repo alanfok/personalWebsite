@@ -57,7 +57,7 @@ const skill = props => {
                     
                     </Col>
                     <Col sm="2">
-                    <p data-aos= "fade-up"><FontAwesomeIcon icon={faAngular} size="4x"/><br/>npm</p>                  
+                    <p data-aos= "fade-up"><FontAwesomeIcon icon={faAngular} size="4x"/><br/>Angular 8+</p>                  
                     </Col>
                     <Col sm="3">
                     
