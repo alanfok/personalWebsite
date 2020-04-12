@@ -10,8 +10,6 @@ margin-top: 25%
 .photoButton{
     background-color: blueviolet;
     border-radius: 20ch;
-    padding-left: 4%;
-    padding-right: 4%;
     color: rgb(228, 217, 217);
     font-weight: bold
 }
