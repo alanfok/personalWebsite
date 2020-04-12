@@ -82,16 +82,12 @@ class Project extends Component{
                         <Container>
                             <Row >
                                 <Col sm="4" lg="4">
-                                    <ProjectCard title={"game \"Small World\"(C++)"} button={<Button color="success" a href="https://github.com/alanfok/Comp345P1">sourceCode(Git)</Button>}>
+                                    <ProjectCard title={"Book Borrow System ( Java )"} button={<Button color="success" a href="https://github.com/VickelLeung/SOEN487A2">sourceCode(Git)</Button>}>
                                     <ul>
-                                        <li className="textleft">Create by using C++</li>
-                                        <li className="textleft">Using Design Pattern</li>
-                                        <ul >
-                                            <li className="textleft">Strategy</li>
-                                            <li className="textleft">Decorator</li>
-                                            <li className="textleft">Observer</li>
-                                        </ul>
-                                        <li className="textleft">Create map by graph matrix</li>
+                                        <li className="textleft">Create by Java, JSP and MySQL</li>
+                                        <li className="textleft">Using SOAP & REST for the core</li>
+                                        <li className="textleft">Designing the MVC Architecture in the back-end</li>
+                                        <li className="textleft">Working in a team of 3 people</li>
                                     </ul>                             
                                     </ProjectCard>
                                 </Col>
